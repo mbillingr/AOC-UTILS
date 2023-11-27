@@ -8,6 +8,8 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 aocd = "^0.1"
+tqdm = "^4.66.1"
+
 
 
 [build-system]
