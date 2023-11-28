@@ -32,7 +32,7 @@ def path_missing(yd):
 
 ALL_DAYS = list(filter(path_missing, ALL_DAYS))
 for year, day in tqdm(ALL_DAYS):
-    path_for_day((year, day)).parent.mkdir(exist_ok=True)
+    path_for_day((year, day)).parent.mkdir(exist_ok=True, parents=True)
     data = get_data(
         session="53616c7465645f5fee2c45065f28449af5f7c608e969e1221a143a530168a75afa92eca7a7d75472de5696032976e73fb947679ff44a28de69f587f3056c3d92",
         day=day,
