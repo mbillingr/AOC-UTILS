@@ -1,17 +1,10 @@
-[tool.poetry]
+[project]
 name = "aoc-utils"
 version = "0.1.0"
-description = ""
-authors = ["Martin Billinger <mbillingr@users.noreply.github.com>"]
+description = "Add your description here"
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.11"
-aocd = "^0.1"
-tqdm = "^4.66.1"
-
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.13"
+dependencies = [
+    "aocd>=0.1",
+    "tqdm>=4.67.1",
+]
