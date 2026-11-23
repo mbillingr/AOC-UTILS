@@ -13,8 +13,11 @@ YEARS = list(range(2015, THIS_YEAR))
 DAYS = list(range(1, 26))
 
 ALL_DAYS = []
-for year in range(2015, THIS_YEAR):
+for year in range(2015, 2025):
     for day in range(1, 26):
+        ALL_DAYS.append((year, day))
+for year in range(2025, THIS_YEAR):
+    for day in range(1, 13):
         ALL_DAYS.append((year, day))
 if THIS_MONTH == 12:
     for day in range(1, min(TODAY, 25) + 1):
